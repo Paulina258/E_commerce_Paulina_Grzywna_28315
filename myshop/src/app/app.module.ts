@@ -8,6 +8,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent } from './components/landing/landing.component';
 import { ProductsComponent } from './components/products/products.component';
 
+
+
 const appRoutes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'landing', component: LandingComponent },
