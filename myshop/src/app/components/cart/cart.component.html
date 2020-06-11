@@ -23,11 +23,12 @@
       </ng-container>
     </tbody>
   </table>
-  <div class="summary" style="center">
+  <div class="summary">
     <p>Do zapłaty: {{getCartPrice()}}</p>
   </div>
   <div class="payment">
     <div id="paypal">
+    <img src="https://podrozovanie.pl/wp-content/uploads/2018/10/paypal-logo-e1579099074706.png" alt="logo">
     </div>
     <form action="http://www.jakubadamus.cba.pl/paypal.php" method="get" #paymentForm>
       <input type="text" #firstName name="firstName" id="" placeholder="Imie">
