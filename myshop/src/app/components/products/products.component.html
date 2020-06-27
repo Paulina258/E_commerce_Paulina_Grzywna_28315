@@ -1,14 +1,14 @@
 <app-panel-top></app-panel-top>
 
-<button routerLink="/landing">Powrót</button>
+<button id="powrot" routerLink="/landing">Powrót</button>
 
 <div class="products">
     <table style="margin:0 auto;" id="productsTable">
         <thead *ngIf="this.mainService.products">
-            <tr>
-                <th>obrazek</th>
-                <th>dane</th>
-                <th>akcje</th>
+            <tr id="naglowek">
+                <th class="box">Obrazek</th>
+                <th class="box">Dane produktu</th>
+                <th class="box">Akcje</th>
             </tr>
         </thead>
         <tbody>
@@ -23,7 +23,7 @@
                         </ul>
                     </td>
                     <td>
-                        <button (click)="addToCart(product)">Do koszyka</button>
+                        <button id="koszyk" (click)="addToCart(product)">Do koszyka</button>
                     </td>
                 </tr>
             </ng-container>

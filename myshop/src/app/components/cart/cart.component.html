@@ -3,9 +3,9 @@
   <table style="margin:0 auto;" id="cartTable">
     <thead *ngIf="this.mainService.products">
       <tr>
-        <th>obrazek</th>
-        <th>dane</th>
-        <th>akcje</th>
+        <th class="box">Obrazek</th>
+        <th class="box">Dane produktu</th>
+
       </tr>
     </thead>
     <tbody>
@@ -24,7 +24,7 @@
     </tbody>
   </table>
   <div class="summary">
-    <p>Do zapłaty: {{getCartPrice()}}</p>
+    <p id="kwota">Do zapłaty: {{getCartPrice()}}</p>
   </div>
   <div class="payment">
     <div id="paypal">
@@ -46,7 +46,8 @@
         <input #regulamin type="checkbox" name="aggrement" id="" (change)="0">
       </label>
       <br>
-      <button [disabled]="!regulamin.checked" (click)="paymentForm.submit()">Kup</button>
+      <button id="kup" [disabled]="!regulamin.checked" (click)="paymentForm.submit()">Kup</button>
+      <br>
     </form>
   </div>
 </div>

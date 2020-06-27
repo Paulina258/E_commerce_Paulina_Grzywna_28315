@@ -4,7 +4,7 @@
     <div class="content-header">
       <h2>Products</h2>
     </div>
-    <button (click)="getProducts()">Odśwież</button>
+    <button class="btn_02" (click)="getProducts()">Odśwież</button>
     <div class="content-container">
       <table style="margin: 0 auto;" id="productsTable">
         <thead>
@@ -14,9 +14,9 @@
            </th>
          </tr>
          <tr>
-            <th>link do obrazka</th>
-            <th>tytuł</th>
-            <th>cena</th>
+            <th>Link do obrazka</th>
+            <th>Tytuł</th>
+            <th>Cena</th>
          </tr>
         </thead>
         <tbody>
@@ -29,7 +29,7 @@
             <option value="tool">tool</option>
             </select>
             </td>
-            <td><button (click)="this.mainService.addProduct(newProduct)" >Dodaj</button></td>
+            <td><button class="btn_02" (click)="this.mainService.addProduct(newProduct)" >Dodaj</button></td>
           </tr>
         </tbody>
       </table>
@@ -37,9 +37,9 @@
       <table style="margin:0 auto;" id="productsTable">
         <thead *ngIf="this.mainService.products">
             <tr>
-              <th>obrazek</th>
-              <th>dane</th>
-              <th>akcje</th>
+              <th class="box">Obrazek</th>
+              <th class="box">Dane produktu</th>
+              <th class="box">Akcje</th>
             </tr>
          </thead>
          <tbody>
@@ -54,7 +54,7 @@
                         </ul>
                     </td>
                     <td>
-                      <button (click)="this.mainService.removeProduct(product.id)">Usuń</button>
+                      <button id="usun" (click)="this.mainService.removeProduct(product.id)">Usuń</button>
                     </td>
                 </tr>
             </ng-container>

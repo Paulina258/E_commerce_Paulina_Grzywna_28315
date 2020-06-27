@@ -3,19 +3,21 @@
         <img src="https://image.freepik.com/darmowe-wektory/tlo-platnosci-online_23-2147697567.jpg" alt="" width="150" height="150">
         <h2>Software shop</h2>
     </div>
-    <button routerLink="/adm_dashboard">Panel Administratora</button>
-
-    <div style="display: flex; justify-content: center;">
-        <input type="text" [(ngModel)]="this.mainService.productsRequest.name">
-        <button (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products">Szukaj Produktu</button>
-    </div>
-    <div>
-      <button id="cartBtn" routerLink="/cart">Twoje zakupy:
+    <hr>
+    <button id="cartBtn" routerLink="/cart">Twoje zakupy:
         {{getCartQuanity()}}
       </button>
+
+
+    <div style="display: flex; justify-content: center;">
+        <input type="text" placeholder="Wyszukaj produkt" [(ngModel)]="this.mainService.productsRequest.name">
+        <button class="btn_01" (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products"><img src="https://fcpp.org/sites/default/files/images/search-icon.png" width="20px" height="20px"></button>
+    </div>
+    <div>
+      <button id="adm" routerLink="/adm_dashboard">Panel Administratora</button>
       <br>
       <br>
       </div>
-      <button>Kontakt do nas</button>
+
 
 </div>

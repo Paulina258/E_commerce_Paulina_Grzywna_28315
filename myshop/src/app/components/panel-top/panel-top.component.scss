@@ -2,7 +2,15 @@
   background: #9EE0DC;
 }
 #cartBtn{
-  float: left;
+  float: right;
+  padding: 7px 7px;
+  color: whitesmoke;
+  background:linear-gradient(#6699FF,#99CCFF);
+  border-radius: 4px;
+  border: 2px solid #B3E5FC;
+  margin-left: 5px;
+  width: 150px;
+  height: 30px;
 }
 #kontakt{
   background: #F1F8E9;
@@ -11,4 +19,34 @@
 				border-color: black;
         border-width: 2px;
         margin-left: 10px;
+}
+h2{
+  color: #000066;
+  margin-top: 60px;
+  font-family: Impact, fantasy ;
+}
+#adm{
+  float: right;
+  padding: 7px 7px;
+  color: whitesmoke;
+  background:linear-gradient(#6699FF,#99CCFF);
+  border-radius: 4px;
+  border: 2px solid #B3E5FC;
+  margin-top: 3px;
+  margin-left: 5px;
+  width: 150px;
+  height: 30px;
+
+}
+
+.btn_01{
+  float: right;
+  padding: 3px 7px;
+  color: whitesmoke;
+  background:linear-gradient(#6699FF,#99CCFF);
+  border-radius: 4px;
+  border: 2px solid #B3E5FC;
+  margin-left: 5px;
+
+
 }
